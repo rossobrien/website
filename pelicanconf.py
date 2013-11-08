@@ -6,10 +6,10 @@ from pelicanconf import *
 
 AUTHOR = u"Ross O'Brien"
 SITENAME = u'Ross O\'Brien'
-SITEURL = 'http://obrienross.com'
+SITEURL = 'http://local.obrienross.com'
 SITESUBTITLE = "Web Developer - Seattle, WA"
 
-TIMEZONE = 'USA/Seattle'
+TIMEZONE = 'USA/Los Angeles'
 
 DEFAULT_DATE_FORMAT = ('%B %d, %Y')
 
@@ -27,6 +27,11 @@ THEME = "/home/ross/workspace/red-block/"
 # Blogroll
 LINKS =  ()
 
+MENUITEMS = (('Work', 'A brief overview of my personal projects and work experience', '/pages/work.html'),
+			 ('About', 'Hi! I\'m Ross. I build websites.', '/pages/about.html'),
+			 ('Blog', 'Thoughs on random things.', '/'),
+			 ('Contact', 'Get in touch!', '/pages/contact.html'))
+
 # Social widget
 SOCIAL = (('twitter', 'http://twitter.com/obrienross'),
           ('github', 'http://github.com/rossobrien'),)
@@ -34,4 +39,4 @@ SOCIAL = (('twitter', 'http://twitter.com/obrienross'),
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+#RELATIVE_URLS = True
