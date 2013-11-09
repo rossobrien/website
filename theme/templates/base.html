@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+	{% block head %}
+	<title>{% block title %}{{ SITENAME }}{% if SITESUBTITLE %} | {{ SITESUBTITLE }}{% endif %}{% endblock title %}</title>
+	<meta charset="utf-8" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+	<style type='text/css'>@font-face {
+		font-family: 'LeagueGothic';
+		src: url('{{ SITEURL }}/theme/css/fonts/leaguegothic-regular-webfont.eot'); /* IE9 Compat Modes */
+		src: url('{{ SITEURL }}/theme/css/fonts/leaguegothic-regular-webfont.eot?iefix') format('eot'), /* IE6-IE8 */
+		url('{{ SITEURL }}/theme/css/fonts/leaguegothic-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		url('{{ SITEURL }}/theme/css/fonts/leaguegothic-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+		url('{{ SITEURL }}/theme/css/fonts/leaguegothic-regular-webfont.svg#webfont3nLbXkSC') format('svg'); /* Legacy iOS */
+	}
+	</style>
+
+	<link rel='stylesheet' id='framework-css' type='text/css' href='{{ SITEURL }}/theme/css/framework.css' media='screen'/>	
+	<link rel="stylesheet" id="pygment-css" type="text/css" href="{{ SITEURL }}/theme/css/pygment.css" />
+	<link rel="stylesheet" id="style-css" type="text/css" href="{{ SITEURL }}/theme/css/style.css" />
+	{% endblock head %}
+</head>
+<body>
+	<header>
+		<h1>
+			<a href="{{ SITEURL }}" title="{{ SITENAME }}">{{ SITENAME }}</a>
+		</h1>
+
+		{% if SITESUBTITLE %}
+		<span id="subtext">{{ SITESUBTITLE }}</span>
+		{% endif %}
+
+		<hr>
+
+		{% if MENUITEMS %}
+		<div id="nav">
+			{% for title, description, link in MENUITEMS %}
+			<div id="{{ title|lower }}" class="nav_box">
+				<h2><a href="{{ link }}">{{ title }}</a></h2>
+				<p> {{ description }}</p>
+			</div>
+			{% endfor %}
+		</div>
+		<div class="break"></div>
+		{% endif %}
+	</header>
+
+	<div id="background" style="display: none;">
+		<div id="main">
+			<div class="content">
+			{% block content %}
+			{% endblock %}
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		{% if SOCIAL %}
+		<span id="social">
+			{% for title, link in SOCIAL %}
+			{% if not loop.first %} - {% endif %} <a href="{{ link }}">{{ title }}</a>
+			{% endfor %}
+		</span>
+		{% endif %}
+
+		{% if GOOGLE_ANALYTICS %}
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', '{{ GOOGLE_ANALYTICS }}']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); 
+			ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+		{% endif %}
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		<script src="{{ SITEURL }}/theme/js/script.js" type="text/javascript"></script>
+	</div>
+</body>
+</html>
