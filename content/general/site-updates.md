@@ -1,5 +1,5 @@
 Title: Site Updates
-date:   2013-11-10 11:30
+date:   2013-11-10 11:25
 author:   ross
 category:   General
 tags:   python, pelican, fabric, meta
@@ -13,4 +13,4 @@ I can deploy the static site using <a href="http://fabfile.org/‎" target="_bla
 
 In non-technical changes, I recently relocated to the Seattle area. I've always wanted to move out west, so when an opportunity come up to move out here, I jumped at the chance. I've started working remotely and will probably post about my thoughts on working from home in the near future. 
 
-So that's all for now. I plan on posting here a little more frequently, so <a href="https://twitter.com/intent/user?screen_name=obrien_ross" target="_blank">follow me on Twitter</a> to stay up to date.
+So that's all for now. I plan on posting here a little more frequently, <a href="https://twitter.com/intent/user?screen_name=obrien_ross" target="_blank">follow me on Twitter</a> to stay up to date.
