@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}{{ SITENAME }} &mdash; Work{% endblock %}
+{% block content %}
+<form id="contact_form" class="basic_form" action="mailto:ross.obrien@gmail.com">
+	<h3>Contact</h3>
+	<hr>
+	<p>
+		Hi there! If you have any questions or want to get in touch, please
+		use the form below. If email is too lengthy for you, feel free to
+		contact me on <a href="https://twitter.com/#!/obrien_ross" target="_blank">Twitter</a>.
+	</p>
+
+
+	<input id="contact_name" class="basic_input" type="text" placeholder="Name"> 
+	<input id="contact_email" class="basic_input" type="email" placeholder="Email">
+	<textarea id="contact_message" class="basic_textarea" placeholder="Message"></textarea>
+	<button id="contact_submit" type="submit" class="btn">Send!</button>
+	<div class="break"></div>
+</form>
+{% endblock %}

@@ -57,7 +57,7 @@
 		{% if SOCIAL %}
 		<span id="social">
 			{% for title, link in SOCIAL %}
-			{% if not loop.first %} - {% endif %} <a href="{{ link }}">{{ title }}</a>
+			{% if not loop.first %} - {% endif %} <a href="{{ link }}" target="_blank">{{ title }}</a>
 			{% endfor %}
 		</span>
 		{% endif %}

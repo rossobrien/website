@@ -13,9 +13,6 @@ from pelicanconf import *
 SITEURL = 'http://obrienross.com'
 RELATIVE_URLS = False
 
+OUTPUT_PATH = 'live'
+
 DELETE_OUTPUT_DIRECTORY = True
-
-# Following items are often useful when publishing
-
-#DISQUS_SITENAME = ""
-#GOOGLE_ANALYTICS = ""

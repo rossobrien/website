@@ -24,7 +24,7 @@ I combined my favorite parts from the feelslikehome theme and the
 Sunburst color scheme, and the result was a color scheme I (Github's
 random repository name generator) called Laughing Hipster.
 
-![theme preview](http://blog.obrienross.com/wp-content/uploads/2013/03/theme.png)
+![theme preview]({filename}/images/theme.png)
 
 I'll probably continue to make tweaks to this as I continue to find
 places for improvement (the CSS colors are a little weak right now...),

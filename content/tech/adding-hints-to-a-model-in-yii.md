@@ -190,7 +190,7 @@ Let's update our `login.php` file quick to get both of our hints.
 
 And that's it!
 
-![Yii login page](http://blog.obrienross.com/wp-content/uploads/2012/10/login.png)
+![Yii login page]({filename}/images/login.png)
 
 *Yii login page with hints pulled from the model*
 

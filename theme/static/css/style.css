@@ -4,7 +4,7 @@ COLORS:
 Green - #606839
 White - #F3EEE3
 Red - #771111
-Black - #202020
+Black - #444
 Grey - #858581  //lighten up a little
 */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
@@ -46,7 +46,7 @@ header {
 	min-width: 950px;
 	max-width: 1250px;
 	margin: 0 auto;
-	padding-top: 50px;
+	padding: 30px 0px;
 }
 header span { display: block; margin-bottom: 5px; }
 
@@ -71,13 +71,13 @@ h2 {
 }
 h2:hover { color: #858581 }
 
-h3 { font-variant:small-caps; margin-bottom: 5px; }
+h3 { font-variant:small-caps; margin-bottom: 5px; color: #444;}
 
 a { text-decoration: none; color: #711; }
 a:hover { color: #858581; }
 
-ol {
-	list-style: decimal inside;
+ol, ul {
+	list-style: inside;
 	margin: 0 0 20px;
 }
 
@@ -107,13 +107,18 @@ time {
 	color: #444;
 }
 
+.post .subtitle { 
+	font-family: Meera, Arial;
+	font-size: 20px;
+}
+
 p { margin: 0 0 20px; }
 
 hr { 
 	height:1px;
 	border-width:0;
-	color: #202020;
-	background-color: #202020;
+	color: #444;
+	background-color: #444;
 	margin-top: -5px;
 	margin-bottom: 25px;
 }
@@ -137,7 +142,7 @@ hr {
 	float: left;
 	margin-right: 4%;
 	height: 150px;
-	border: 0px solid #202020;
+	border: 0px solid #444;
 	cursor: pointer;
 	text-align: left;
 	padding: 20px;
@@ -157,18 +162,19 @@ hr {
 	background-color: white;
 	margin: 10px;
 	padding: 20px; 
-	border: 1px solid #202020;
+	border: 1px solid #444;
 }
 
 .work_row { 
-	border-bottom: 1px dotted #202020;
+	border-bottom: 1px dotted #444;
 	margin: 0px 40px;
 	padding: 10px;
 }
 .work_row .media { width: 24.5%; float: left; display: table-cell; height: 200px; }
 .work_row .media img { max-width: 90%; max-height: 200px; display: inline-block; margin: 0 auto; vertical-align:middle;}
 .work_row .text { width:75%; display: inline-block; }
-.work_row .text p { font-family: serif; font-size: 14px; }
+.work_row .text p { font-family: 'Helvetica Neue', sans-serif; font-size: 14px; }
+.work_row .text h3 { font-size: 16px;}
 
 .block {
   text-align: center;
@@ -186,11 +192,22 @@ hr {
 .highlight, blockquote { 
 	background: #f0f0f0;
 	padding: 10px 20px;
-	font-family: Meera, Arial; 
-	font-size: 15px; 
 	margin: 0 0 20px;
 	border-left: 10px solid #711;
-	word-wrap:break-word;
+	word-wrap: break-word;
+}
+
+.highlight {
+	font-size: 15px;
+}
+
+blockquote {	
+	font-family: Meera, Arial; 
+	font-size: 20px;
+}
+
+blockquote p:last-of-type {
+	margin: 0px;
 }
 
 code { 
@@ -208,15 +225,34 @@ code {
 .basic_form input:-moz-placeholder,
 .basic_form textarea:-moz-placeholder { color: #858581; }
 
-.basic_input { display: block; padding: 4px; margin: 10px 0px; border: 1px solid #202020; width: 500px; }
-.basic_textarea { padding:4px; border: 1px solid #202020; width: 500px; height: 200px;  resize: none;  }
-.basic_submit { display: block; padding: 4px;  border: 1px solid #202020; float: right; }
+.basic_input { display: block; padding: 4px; margin: 10px 0px; border: 1px solid #444; width: 500px; }
+.basic_textarea { padding:4px; border: 1px solid #444; width: 500px; height: 200px;  resize: none;  }
+.btn {
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  border: 0px;
+  font-family: Arial;
+  color: #444;
+  font-size: 18px;
+  background: #D5D5D5;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;
+  float: right;
+  cursor: pointer;
+  margin: 5px 0px;
+}
+
+.btn:hover {
+  background: #dedede;
+  text-decoration: none;
+}
 
 #login_wrap {
 	text-align: center;
 	margin: 0 auto;
 	display: table;
-	border: 1px solid #202020;
+	border: 1px solid #444;
 	padding: 20px 50px;
 }
 
@@ -229,8 +265,8 @@ code {
 
 #logout { float: right; }
 
-.error { width: 100%; padding: 15px; border: 1px solid #202020; color: #D00; background-color: #F2DEDE; }
-.success { width: 100%; padding: 15px; border: 1px solid #202020; color: #468847; background-color: #DFF0D8; }
+.error { width: 100%; padding: 15px; border: 1px solid #444; color: #D00; background-color: #F2DEDE; }
+.success { width: 100%; padding: 15px; border: 1px solid #444; color: #468847; background-color: #DFF0D8; }
 
 #social { display: block; padding: 10px; font-weight: bold; font-size: 16px; }
 

@@ -18,13 +18,18 @@ SUMMARY_MAX_LENGTH = 100
 
 THEME = "./theme/"
 
+# Static template pages
+TEMPLATE_PAGES = {'pages/about.html': 'pages/about.html',
+                  'pages/work.html': 'pages/work.html',
+                  'pages/contact.html': 'pages/contact.html'}
+
 MENUITEMS = (('Work', 'A brief overview of my personal projects and work experience', '/pages/work.html'),
 			 ('About', 'Hi! I\'m Ross. I build websites.', '/pages/about.html'),
 			 ('Blog', 'Thoughs on random things.', '/index.html'),
 			 ('Contact', 'Get in touch!', '/pages/contact.html'))
 
 # Social widget
-SOCIAL = (('twitter', 'http://twitter.com/obrienross'),
+SOCIAL = (('twitter', 'http://twitter.com/obrien_ross'),
           ('github', 'http://github.com/rossobrien'),)
 
 DEFAULT_PAGINATION = 10
