@@ -6,7 +6,7 @@ tags:   php, stackoverflow, tutorial, yii
 slug:   adding-hints-to-a-model-in-yii
 
 Like most programmers, I spend a fair amount of time browsing
-[StackOverflow](http://stackoverflow.com). A few weeks ago, I saw this
+<a href="http://stackoverflow.com" target="_blank">StackOverflow</a>. A few weeks ago, I saw this
 question on there.
 
 > I need to have comments/hints for some fields in my Form. My idea is
@@ -16,13 +16,11 @@ question on there.
 > would take it directly from mysql column's comment
 
 Thanks to my time spent with Yii while working
-on [Pear](http://getpear.com) for [Apparel
-Media](http://apparelmedia.com), I was able to contribute an answer. I
+on <a href="http://pearup.com" target="_blank">Pear</a>, I was able to contribute an answer. I
 think is a pretty good tutorial for adding any attribute to a model, so
 I'll go over it here as well.
 
-First off, [here's the
-post](http://stackoverflow.com/questions/12319659/yii-model-attributes-comments-hints)
+First off, <a href="http://stackoverflow.com/questions/12319659/yii-model-attributes-comments-hints" target="_blank">here's the post</a>
 on StackOverflow. The question can be broken down into two parts:
 
 1.  Describe hints in the model and display on the form.

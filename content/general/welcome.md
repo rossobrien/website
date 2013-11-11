@@ -2,6 +2,7 @@ Title: Welcome!
 date:   2012-10-23 12:00
 author:   ross
 category:   General
+tags:   meta
 slug:   welcome
 
 Hey there, I'm Ross! Welcome to my website! I'll post here occasionally
