@@ -1,20 +1,40 @@
 {% extends "base.html" %}
-{% block title %}{{ SITENAME }} &mdash; Work{% endblock %}
+{% block title %}{{ SITENAME }} &mdash; Contact{% endblock %}
 {% block content %}
-<form id="contact_form" class="basic_form" action="mailto:ross.obrien@gmail.com">
-	<h3>Contact</h3>
-	<hr>
+<div class="post" style="text-align: center;">
+	<h1>Let's talk!</h1>
+	<p style="width:50%; margin-left: auto; margin-right: auto;">
+		Hi there! If you have any questions, comments, or just want to get in touch, I can be reached using any of the methods below.
+	</p>
 	<p>
-		Hi there! If you have any questions or want to get in touch, please
-		use the form below. If email is too lengthy for you, feel free to
-		contact me on <a href="https://twitter.com/#!/obrien_ross" target="_blank">Twitter</a>.
+		<a href="mailto:ross.obrien@gmail.com">
+			<span class="fa-stack fa-2x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+
+		<a href="http://twitter.com/obrien_ross" target="_blank">
+			<span class="fa-stack fa-2x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+
+		<a href="http://linkedin.com/in/obrienross/" target="_blank">
+			<span class="fa-stack fa-2x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+			</span>
+		</a>
+
+		<a href="http://github.com/rossobrien" target="_blank">
+			<span class="fa-stack fa-2x">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-github-alt fa-stack-1x fa-inverse"></i> 
+			</span>
+		</a>
 	</p>
 
-
-	<input id="contact_name" class="basic_input" type="text" placeholder="Name"> 
-	<input id="contact_email" class="basic_input" type="email" placeholder="Email">
-	<textarea id="contact_message" class="basic_textarea" placeholder="Message"></textarea>
-	<button id="contact_submit" type="submit" class="btn">Send!</button>
-	<div class="break"></div>
-</form>
+</div>
 {% endblock %}
