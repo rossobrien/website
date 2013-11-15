@@ -10,25 +10,15 @@ Grey - #858581  //lighten up a little
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 html, body { height: 100%; margin: 0; padding: 0; }
 body { 
-	font-family: Meera, Arial;
-	font-size: 20px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	color: #444;
 	text-decoration: none;
 	/*letter-spacing: 0px;*/
 	background-color: #FFF;
 }
 
 /*Fonts*/
-@font-face {
-    font-family: 'BebasNeue';
-    src: url('fonts/bebasneue.eot');
-    src: url('fonts/bebasneue.eot?#iefix') format('embedded-opentype'),
-         url('fonts/bebasneue.woff') format('woff'),
-         url('fonts/bebasneue.ttf') format('truetype'),
-         url('fonts/bebasneue.svg#bebasneue') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 @font-face {
     font-family: 'League Gothic';
     src: url('fonts/leaguegothic-regular-webfont.eot');
@@ -46,9 +36,9 @@ header {
 	min-width: 950px;
 	max-width: 1250px;
 	margin: 0 auto;
-	padding: 30px 0px;
+	/*padding: 10px 0px;*/
 }
-header span { display: block; margin-bottom: 5px; }
+header span { display: block; margin-bottom: 15px; }
 
 h1 { 
 	font-family: 'League Gothic', 'Arial Narrow', Impact, sans-serif;
@@ -108,8 +98,9 @@ time {
 }
 
 .post .subtitle { 
-	font-family: Meera, Arial;
-	font-size: 20px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 p { margin: 0 0 20px; }
@@ -197,13 +188,9 @@ hr {
 	word-wrap: break-word;
 }
 
-.highlight {
-	font-size: 15px;
-}
-
 blockquote {	
-	font-family: Meera, Arial; 
-	font-size: 20px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 14px;
 }
 
 blockquote p:last-of-type {
@@ -268,7 +255,7 @@ code {
 .error { width: 100%; padding: 15px; border: 1px solid #444; color: #D00; background-color: #F2DEDE; }
 .success { width: 100%; padding: 15px; border: 1px solid #444; color: #468847; background-color: #DFF0D8; }
 
-#social { display: block; padding: 10px; font-weight: bold; font-size: 16px; }
+#social { display: block; padding: 10px; font-weight: bold; font-size: 12px; }
 
 #footer { text-align: center; width: 100%; }
 
