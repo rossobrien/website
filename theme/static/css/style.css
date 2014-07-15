@@ -7,6 +7,7 @@ Red - #771111
 Black - #444
 Grey - #858581  //lighten up a little
 */
+
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 html, body { height: 100%; margin: 0; padding: 0; }
 body { 
@@ -16,6 +17,7 @@ body {
 	text-decoration: none;
 	/*letter-spacing: 0px;*/
 	background-color: #FFF;
+	padding-top: 50px;
 }
 
 /*Fonts*/
@@ -31,14 +33,16 @@ body {
 
 }
 
-header {
-	text-align: center;
-	min-width: 950px;
-	max-width: 1250px;
-	margin: 0 auto;
-	/*padding: 10px 0px;*/
+.jumbotron { 
+	text-align: center; 
+	background-image: url("https://scontent-a-pao.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10552419_10202155784237625_757103100970732188_n.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0px -100px;
+	min-height: 300px;
 }
-header span { display: block; margin-bottom: 15px; }
+
+.jumbotron h1 { color: #711; }
 
 h1 { 
 	font-family: 'League Gothic', 'Arial Narrow', Impact, sans-serif;
@@ -64,7 +68,7 @@ h2:hover { color: #858581 }
 h3 { font-variant:small-caps; margin-bottom: 5px; color: #444;}
 
 a { text-decoration: none; color: #711; }
-a:hover { color: #858581; }
+a:hover { color: #858581; text-decoration: none!important;}
 
 ol, ul {
 	list-style: inside;
@@ -266,6 +270,10 @@ footer {
 	font-size: 12px;
 	margin: 20px 0 0;
 	padding: 5px 0 10px;
+}
+
+footer p { 
+	text-align: center;
 }
 
 .break { clear: both; }
