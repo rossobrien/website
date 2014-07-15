@@ -35,7 +35,7 @@ body {
 
 .jumbotron { 
 	text-align: center; 
-	background-image: url("https://scontent-a-pao.xx.fbcdn.net/hphotos-xpa1/t1.0-9/10552419_10202155784237625_757103100970732188_n.jpg");
+	background-image: url("images/cover.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0px -100px;
