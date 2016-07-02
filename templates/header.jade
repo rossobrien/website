@@ -1,0 +1,22 @@
+.navbar.navbar-wrapper
+	.container
+		.header
+			a(href="/", class="navbar-brand pull-left")
+				h2.name
+					="Ross O'Brien"
+
+			ul.nav.nav-pills.pull-right
+				for item in locals.menu
+					if item.submenu.length > 0
+						li.dropdown
+							a(href=item.url, class="dropdown-toggle", data-toggle="dropdown", role="button")
+								=item.name
+							ul.dropdown-menu
+								for subitem in item.submenu
+									li
+										a(href=subitem.url)
+											=subitem.name
+					else
+						li
+							a(href=item.url)
+								=item.name

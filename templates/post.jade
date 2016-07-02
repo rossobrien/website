@@ -1,0 +1,14 @@
+extends layout
+
+block content
+	.container
+		article.article
+			header
+				h1= page.title
+
+				span.text-muted
+					=moment.tz(page.date, 'America/Los_Angeles').format('MMMM DD, YYYY')
+
+			br
+
+			section.content!= page.html

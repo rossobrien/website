@@ -1,0 +1,20 @@
+extends layout
+
+block content
+	.container
+		h1(style="text-align:center;") Blog
+
+		each article in articles
+			.row
+				.col-md-12
+					article
+						header
+							h2
+								a(href=article.url)
+									=article.title
+							span.text-muted
+								=moment(article.date).format('MMMM DD, YYYY')
+						
+						br
+
+						section.content!= article.intro

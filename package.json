@@ -1,0 +1,8 @@
+{
+	"dependencies": {
+		"moment": "2.9.x",
+		"moment-timezone": "0.3.x",
+		"wintersmith-articles-helper": "0.1.x"
+	},
+	"repository": "none"
+}

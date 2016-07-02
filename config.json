@@ -1,0 +1,72 @@
+{
+	"locals": {
+		"name": "Ross O'Brien",
+		"url": "http://obrienross.com/",
+		"description": "Web dev and outdoor enthusiast located in Seattle, WA",
+		"menu": 
+		[
+			{
+				"name": "Home",
+				"url": "/",
+				"submenu": []
+			},			
+			{
+				"name": "About",
+				"url": "/about",
+				"submenu": []
+			},
+			{
+				"name": "Contact",
+				"url": "/contact",
+				"submenu": []
+			}
+		],
+		"social": 
+		[
+			{
+				"name": "twitter",
+				"url": "https://twitter.com/obrien_ross"
+			},
+			{
+				"name": "github",
+				"url": "https://github.com/rossobrien"
+			}
+		],
+		"contact":
+		[
+			{
+				"name": "Email",
+				"icon": "envelope",
+				"url": "mailto:ross.obrien@gmail.com"
+			},
+			{
+				"name": "Twitter",
+				"icon": "twitter",
+				"url": "https://twitter.com/obrien_ross"
+			},
+			{
+				"name": "LinkedIn",
+				"icon": "linkedin",
+				"url": "http://linkedin.com/in/obrienross/"
+			},
+			{
+				"name": "Github",
+				"icon": "github-alt",
+				"url": "https://github.com/rossobrien"
+			}
+
+		]
+	},
+	"plugins": [
+	],
+	"require": {
+		"moment": "moment-timezone"
+	},
+	"jade": {
+		"pretty": true
+	},
+	"markdown": {
+		"smartLists": true,
+		"smartypants": true
+	}
+}

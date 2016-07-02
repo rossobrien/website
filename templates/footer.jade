@@ -1,0 +1,10 @@
+footer
+	.container
+		p.social
+			
+		small.text-muted
+			| &copy; 2016 Ross O'Brien
+			for item in locals.social
+				| &nbsp;-&nbsp;
+				a(href=item.url,target="_blank")
+					=item.name
