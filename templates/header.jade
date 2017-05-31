@@ -1,14 +1,14 @@
 .navbar.navbar-wrapper
 	.container
 		.header
-			a(href="/", class="navbar-brand pull-left")
+			a(href="/", class="navbar-brand pull-left-md float-xs")
 				h2.name
 					="Ross O'Brien"
 
-			ul.nav.nav-pills.pull-right
+			ul.nav.nav-pills.pull-right-md
 				for item in locals.menu
 					if item.submenu.length > 0
-						li.dropdown
+						li.pill-xs.dropdown
 							a(href=item.url, class="dropdown-toggle", data-toggle="dropdown", role="button")
 								=item.name
 							ul.dropdown-menu
@@ -17,6 +17,6 @@
 										a(href=subitem.url)
 											=subitem.name
 					else
-						li
+						li.pill-xs
 							a(href=item.url)
 								=item.name

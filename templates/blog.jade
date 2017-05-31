@@ -1,20 +1,16 @@
 extends layout
 
 block content
-	.container
-		h1(style="text-align:center;") Blog
-
+	.container.container-wide
+		h2.headtext(style="text-align:center;") Blog
+		
 		each article in articles
-			.row
-				.col-md-12
-					article
-						header
-							h2
-								a(href=article.url)
-									=article.title
-							span.text-muted
-								=moment(article.date).format('MMMM DD, YYYY')
-						
-						br
-
-						section.content!= article.intro
+			.col-md-6.col-xs-12
+				article
+					.blog-card(style="color: #FFF; background-image:url('" + article.metadata.thumbnail + "')")
+						a.blog-card-link(href=article.url)
+						.blog-card-contents
+							h2.headtext=article.title
+							span
+								strong=moment(article.date).format('MMMM DD, YYYY')
+						.blog-card-overlay
